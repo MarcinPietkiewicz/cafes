@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <title>Cloud Cafe</title>
 </head>
@@ -17,6 +20,26 @@
         <ul id="cafe-list"></ul>
 
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA-Q8nt7tP95AIqfnWCdApAI7WN-pi_Lbg",
+            authDomain: "chat1-f0f01.firebaseapp.com",
+            databaseURL: "https://chat1-f0f01.firebaseio.com",
+            projectId: "chat1-f0f01",
+            storageBucket: "chat1-f0f01.appspot.com",
+            messagingSenderId: "490904671393",
+            appId: "1:490904671393:web:d826431a84d3f03490cce0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
     <script src="app.js"></script>
 </body>
 
